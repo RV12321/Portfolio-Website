@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ryan Voso Portfolio Website</title>
+        <link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+		
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/c608859019.js" crossorigin="anonymous"></script>
+		
+		<link href='https://fonts.googleapis.com/css?family=Azeret Mono' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.htm" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.htm#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.htm#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.htm#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+		<section class="intro">
+            <h1 class="section__title section__title--intro">
+                Ryan's <strong>Cube Solver</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A Program That Teaches You How To Solve A Rubiks Cube</p>
+            <img src="cubes1.jpg" alt="" class="intro__img";
+				
+			/>
+        </section>
+		
+		<div class="portfolio-item-individual">
+			<p></p>
+			<p>This program is designed to teach anyone how to solve a Rubiks Cube. It is made to be very beginner friendly.
+			It was coded entirely using Java and the Eclipse IDE. Below is a demonstration on how the program works: 
+			</p>
+			<div class="cube-video">
+				<embed style="width:720px; height: 450px;" src="https://www.youtube.com/embed/gzlXhNGz2dI"></embed>
+				</video>
+			</div>
+			<p>The program was coded using a 6x9 array to represent the colors on the cube. Each row in the array represents one side of the cube.
+			Each element represents one color square. There are 6 sides of the cube, and 9 colors on each side, hence the 6x9 array. I then created functions to represent
+			turning a side on the cube. For example, there is a function to turn the orange side clockwise, one to turn the orange side counter clockwise, and 
+			this repeats for every side. The user inputs the current orientation of their cube using the GUI I have created using JFrame in Java.
+			The program then uses a series of "if" statements to check where certain colors are on the cube, and make the appropriate turns
+			accordingly in order to solve the cube.
+			</p>
+		</div>
+        
+        <!-- Footer -->
+        <footer class = "footer">
+            <!-- replace with your own email address -->
+            <a href="ryanvoso@gmail.com" class="footer__link">ryanvoso@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com/in/ryanvoso"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="mailto:ryanvoso@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/RV12321"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </footer>
+		
+		<script src="index.js"></script>
+        
+    </body>
+</html>
